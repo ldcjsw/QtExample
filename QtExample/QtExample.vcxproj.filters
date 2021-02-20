@@ -50,6 +50,15 @@
     <ClCompile Include="WidgetComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="WidgetMultiThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WidgetNetWork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WidgetMultimedia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="SelectTreeWidget.h">
@@ -64,5 +73,16 @@
     <QtMoc Include="WidgetComponent.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="WidgetMultiThread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="WidgetNetWork.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WidgetMultimedia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

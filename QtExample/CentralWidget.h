@@ -13,8 +13,8 @@ public:
 	~CentralWidget();
 
 private:
-	SelectTreeWidget* m_selectTreeWidget = new SelectTreeWidget;
 	SelectStackedWidget* m_selectStackedWidget = new SelectStackedWidget;
+	SelectTreeWidget* m_selectTreeWidget = new SelectTreeWidget(nullptr, m_selectStackedWidget);
 	QHBoxLayout* m_hBoxLayoutAll = new QHBoxLayout;
 };
 
