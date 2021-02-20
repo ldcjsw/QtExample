@@ -11,5 +11,8 @@ public:
     QtExample(QWidget *parent = Q_NULLPTR);
 
 private:
+	void initStatus();
+
+private:
 	CentralWidget* m_centralWidget = new CentralWidget;
 };
