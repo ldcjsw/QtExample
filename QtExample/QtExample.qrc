@@ -1,4 +1,5 @@
 <RCC>
-    <qresource prefix="QtExample">
+    <qresource prefix="/">
+        <file>res/WidgetComponent/tableBG.png</file>
     </qresource>
 </RCC>
