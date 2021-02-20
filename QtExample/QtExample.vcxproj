@@ -86,6 +86,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="SelectStackedWidget.cpp" />
+    <ClCompile Include="SelectTreeWidget.cpp" />
+    <ClCompile Include="WidgetComponent.cpp" />
     <QtRcc Include="QtExample.qrc" />
     <QtMoc Include="QtExample.h" />
     <ClCompile Include="CentralWidget.cpp" />
@@ -93,7 +96,12 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CentralWidget.h" />
+    <QtMoc Include="CentralWidget.h" />
+    <QtMoc Include="SelectStackedWidget.h" />
+    <QtMoc Include="SelectTreeWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="WidgetComponent.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

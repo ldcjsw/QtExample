@@ -2,29 +2,19 @@
 #include <QObject>
 #include <QWidget>
 #include <QHBoxLayout>
-#include <QPushButton>
-#include <QLineEdit>
-#include <QComboBox>
-#include <QLabel>
+#include "SelectTreeWidget.h"
+#include "SelectStackedWidget.h"
 
 class CentralWidget :public QWidget
 {
+	Q_OBJECT
 public:
-	CentralWidget(QWidget* parent = Q_NULLPTR);
+	explicit CentralWidget(QWidget* parent = Q_NULLPTR);
 	~CentralWidget();
 
 private:
-	void initStyleSheet();
-	void initLayOut();
-
-private slots:
-	void onPushButtonClicked();
-
-private:
-	QLineEdit* m_lineEdit = new QLineEdit;
-	QComboBox* m_comboBox = new QComboBox;
-	QPushButton* m_pushButton = new QPushButton;
-	QLabel* m_label = new QLabel;
-	QHBoxLayout* m_hBoxLayout = new QHBoxLayout;
+	SelectTreeWidget* m_selectTreeWidget = new SelectTreeWidget;
+	SelectStackedWidget* m_selectStackedWidget = new SelectStackedWidget;
+	QHBoxLayout* m_hBoxLayoutAll = new QHBoxLayout;
 };
 
