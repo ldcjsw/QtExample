@@ -23,6 +23,7 @@ void SelectTreeWidget::initTreeItem()
 	m_item31 = new QTreeWidgetItem(m_item3, QStringList(QString(QStringLiteral("服务器"))));
 	m_item32 = new QTreeWidgetItem(m_item3, QStringList(QString(QStringLiteral("客户端"))));
 	m_item4 = new QTreeWidgetItem(this, QStringList(QString(QStringLiteral("多媒体"))));
+	m_item5 = new QTreeWidgetItem(this, QStringList(QString(QStringLiteral("MVC"))));
 }
 
 void SelectTreeWidget::initTreeStyle()
@@ -53,5 +54,8 @@ void SelectTreeWidget::onTreeWidgetItemClicked(QTreeWidgetItem* item, int count)
 	else if (item->text(count) == QStringLiteral("多媒体"))
 	{
 		m_selectStackedWidget->setCurrentIndex(3);
+	}else if (item->text(count) == QStringLiteral("MVC"))
+	{
+		m_selectStackedWidget->setCurrentIndex(4);
 	}
 }

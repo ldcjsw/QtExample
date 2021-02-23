@@ -59,6 +59,12 @@
     <ClCompile Include="WidgetMultimedia.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="WidgetMVC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sqlite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="SelectTreeWidget.h">
@@ -79,9 +85,18 @@
     <QtMoc Include="WidgetNetWork.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="WidgetMVC.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WidgetMultimedia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sqlite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

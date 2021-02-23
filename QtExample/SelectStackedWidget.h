@@ -5,6 +5,7 @@
 #include "WidgetMultiThread.h"
 #include "WidgetNetWork.h"
 #include "WidgetMultimedia.h"
+#include "WidgetMVC.h"
 
 class SelectStackedWidget : public QStackedWidget
 {
@@ -19,5 +20,6 @@ private:
 	WidgetMultiThread* m_widgetMultiThread = new WidgetMultiThread;
 	WidgetNetWork* m_widgetNetWork = new WidgetNetWork;
 	WidgetMultimedia* m_widgetMedia = new WidgetMultimedia;
+	WidgetMVC* m_widgetMVC = new WidgetMVC;
 };
 

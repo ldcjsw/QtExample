@@ -24,6 +24,7 @@ private:
 	QTreeWidgetItem *m_item31 = nullptr;
 	QTreeWidgetItem *m_item32 = nullptr;
 	QTreeWidgetItem *m_item4 = nullptr;
+	QTreeWidgetItem *m_item5 = nullptr;
 
 	SelectStackedWidget *m_selectStackedWidget = nullptr;
 };

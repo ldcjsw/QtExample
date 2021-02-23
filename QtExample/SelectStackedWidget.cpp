@@ -16,4 +16,5 @@ void SelectStackedWidget::initStackedWidget()
 	addWidget(m_widgetMultiThread);
 	addWidget(m_widgetNetWork);
 	addWidget(m_widgetMedia);
+	addWidget(m_widgetMVC);
 }
