@@ -65,6 +65,9 @@
     <ClCompile Include="Sqlite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="SelectTreeWidget.h">
@@ -86,6 +89,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="WidgetMVC.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CThread.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

@@ -57,6 +57,9 @@
       <AdditionalDependencies>sqlite3_x64.lib;$(Qt_LIBS_);%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>.;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>editbin /SUBSYSTEM:CONSOLE $(OUTDIR)\$(ProjectName).exe</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
     <QtInstall>msvc2017_64</QtInstall>
@@ -98,6 +101,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CThread.cpp" />
     <ClCompile Include="Sqlite.cpp" />
     <ClCompile Include="WidgetMVC.cpp" />
     <ClCompile Include="SelectStackedWidget.cpp" />
@@ -127,6 +131,7 @@
     <QtMoc Include="WidgetNetWork.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="CThread.h" />
     <ClInclude Include="Sqlite.h" />
     <ClInclude Include="sqlite3.h" />
     <QtMoc Include="WidgetMVC.h" />
